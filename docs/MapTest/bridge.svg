@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="220" height="220" viewBox="0 0 220 220">
   <title>Bridge overlay — straight road</title>
   <desc>Transparent overlay centered at 110 110, aligned with road edges 0 and 3. Place above a straight road and river. Rotate the bridge layer in 60-degree increments about the center to match the road.</desc>
-  <g id="hex" inkscape:groupmode="layer" inkscape:label="Hexagon — optional alignment guide" style="display:none">
+  <g id="hex" inkscape:groupmode="layer" inkscape:label="Hexagon — alignment guide">
     <polygon id="hexagon" points="110,10 196.602540378,60 196.602540378,160 110,210 23.397459622,160 23.397459622,60" fill="none" stroke="#586777" stroke-width="1.5"/>
   </g>
   <g id="bridge" inkscape:groupmode="layer" inkscape:label="Bridge — editable deck and parapets">
