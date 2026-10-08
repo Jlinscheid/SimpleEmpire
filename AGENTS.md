@@ -1,6 +1,6 @@
 # Shared agent instructions
 
-These instructions apply throughout this repository to Codex, Herms, and other
+These instructions apply throughout this repository to Codex, Hermes, and other
 assistants. Keep project knowledge in repository files rather than only in chats
 or private memory. If your assistant does not load this file automatically,
 explicitly ask it to read it before working.
