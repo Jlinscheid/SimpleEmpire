@@ -4,7 +4,7 @@
 
 Seven river-bearing patterns, distinct under 60-degree rotation and reflection.
 Each SVG is standalone and editable in Inkscape; there are no fonts, linked images,
-clones, or external dependencies.
+clones, or external dependencies. Hexagon fills are transparent; outlines remain visible.
 
 | File | Connected edges | Pattern |
 | --- | --- | --- |
