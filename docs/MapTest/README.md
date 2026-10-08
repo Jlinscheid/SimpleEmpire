@@ -12,7 +12,7 @@ at the center (one connection), pass through (two), or join three arms at one
 center junction. All arms belong to one connected system. Only the alternating
 three-arm pattern forms an evenly spaced Y; the others cover the remaining edge
 selections. Four-or-more-edge junctions, loops, and disconnected systems are
-outside these sets.
+outside these sets. The optional empty road tile has no connections.
 
 Each individual tile SVG is standalone and editable in Inkscape; there are no fonts, linked images,
 clones, or external dependencies. Hexagon fills are transparent; outlines remain visible.
@@ -23,13 +23,13 @@ The separate mockup is not part of the standardized tile set.
 
 | File | Connected edges | Pattern |
 | --- | --- | --- |
-| `river-endpoint.svg` | 0 | Edge to center endpoint (or source) |
-| `river-two-edge-adjacent.svg` | 0, 1 | Adjacent edges |
-| `river-two-edge-separated.svg` | 0, 2 | One intervening edge |
-| `river-two-edge-opposite.svg` | 0, 3 | Opposite edges |
-| `river-branch-consecutive.svg` | 0, 1, 2 | Three consecutive edges; cyclic gaps 1, 1, 4 |
-| `river-branch-asymmetric.svg` | 0, 1, 3 | Asymmetric branch; cyclic gaps 1, 2, 3 |
-| `river-branch-alternating.svg` | 0, 2, 4 | Alternating edges; cyclic gaps 2, 2, 2 |
+| [river-endpoint.svg](river-endpoint.svg) | 0 | Edge to center endpoint (or source) |
+| [river-two-edge-adjacent.svg](river-two-edge-adjacent.svg) | 0, 1 | Adjacent edges |
+| [river-two-edge-separated.svg](river-two-edge-separated.svg) | 0, 2 | One intervening edge |
+| [river-two-edge-opposite.svg](river-two-edge-opposite.svg) | 0, 3 | Opposite edges |
+| [river-branch-consecutive.svg](river-branch-consecutive.svg) | 0, 1, 2 | Three consecutive edges; cyclic gaps 1, 1, 4 |
+| [river-branch-asymmetric.svg](river-branch-asymmetric.svg) | 0, 1, 3 | Asymmetric branch; cyclic gaps 1, 2, 3 |
+| [river-branch-alternating.svg](river-branch-alternating.svg) | 0, 2, 4 | Alternating edges; cyclic gaps 2, 2, 2 |
 
 ## Road tile files
 
@@ -54,7 +54,7 @@ All tiles use a 220 x 220 SVG canvas, a point-up regular hexagon of circumradius
 and side length 100, and center `(110, 110)`. The hexagon is approximately
 173.205081 x 200 units. Edge numbers run clockwise from the upper-right edge:
 0 upper right, 1 right, 2 lower right, 3 lower left, 4 left, 5 upper left.
-Every river or road arm meets an edge at its midpoint, perpendicular to that edge.
+On nonempty tiles, every river or road arm meets an edge at its midpoint, perpendicular to that edge.
 Both use a width of 12 units. Each branch has exactly one junction at the center.
 
 Open an individual SVG in Inkscape. In Layers and Objects, edit the **Hexagon**
@@ -86,8 +86,7 @@ the hexagon should stay fixed. Edge labels describe the original orientation.
 
 The 220-unit page includes margins; it is not the map grid spacing. For a
 point-up hex grid, use horizontal center spacing `100*sqrt(3)` and vertical
-row spacing `150`, staggering alternate rows by `50*sqrt(3)`. Rivers and roads then meet
-at neighboring edge midpoints.
+row spacing `150`, staggering alternate rows by `50*sqrt(3)`. Matching river or road connections meet at neighboring edge midpoints when their connected edges face each other.
 
 ## Maintenance
 
