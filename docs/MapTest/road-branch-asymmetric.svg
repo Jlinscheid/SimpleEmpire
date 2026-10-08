@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="220" height="220" viewBox="0 0 220 220">
+  <title>Road hex tile — branch-asymmetric</title>
+  <desc>Regular point-up hexagon, radius 100, center 110 110. Edges numbered clockwise from upper right, 0 through 5. All road arms join at the center; roads are undirected.</desc>
+  <g id="hex" inkscape:groupmode="layer" inkscape:label="Hexagon">
+    <polygon id="hexagon" points="110.000000000,10.000000000 196.602540378,60.000000000 196.602540378,160.000000000 110.000000000,210.000000000 23.397459622,160.000000000 23.397459622,60.000000000" fill="none" stroke="#586777" stroke-width="1.5" />
+  </g>
+  <g id="road" inkscape:groupmode="layer" inkscape:label="Road — editable arms">
+    <g fill="none" stroke="#806044" stroke-width="12" stroke-linecap="butt" stroke-linejoin="round">
+      <path id="road-edge-0" d="M 110,110 L 153.301270189,35.000000000" />
+      <path id="road-edge-1" d="M 110,110 L 196.602540378,110.000000000" />
+      <path id="road-edge-3" d="M 110,110 L 66.698729811,185.000000000" />
+    </g>
+    <circle id="road-center" cx="110" cy="110" r="6" fill="#806044" />
+  </g>
+</svg>
