@@ -46,8 +46,7 @@ The separate mockup is not part of the standardized tile set.
 | [road-empty.svg](road-empty.svg) | None | Optional empty hexagon |
 
 Roads are undirected and have no flow-arrow layers. The empty tile contains only
-the visible hexagon outline and an empty road layer. See [ROADS.md](ROADS.md)
-for additional road-specific notes.
+the visible hexagon outline and an empty road layer. See the [geometry and editing](#geometry-and-editing) section for editing instructions.
 
 ## Bridge overlay
 
@@ -141,4 +140,3 @@ row spacing `150`, staggering alternate rows by `50*sqrt(3)`. Matching river, ro
 
 Update this README whenever tiles are added or changed, including file inventories,
 background appearance, layer behavior, and geometry or editing instructions.
-Keep [ROADS.md](ROADS.md) consistent with road-specific changes.
