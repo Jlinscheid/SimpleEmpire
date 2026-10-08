@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="220" height="220" viewBox="0 0 220 220">
+  <title>Railroad hex tile — branch-alternating</title>
+  <desc>Regular point-up hexagon, radius 100, center 110 110. Transparent schematic railroad with editable ties and paired rails. All arms connect at the center.</desc>
+  <g id="hex" inkscape:groupmode="layer" inkscape:label="Hexagon">
+    <polygon id="hexagon" points="110.000000000,10.000000000 196.602540378,60.000000000 196.602540378,160.000000000 110.000000000,210.000000000 23.397459622,160.000000000 23.397459622,60.000000000" fill="none" stroke="#586777" stroke-width="1.5" />
+  </g>
+  <g id="ties" inkscape:groupmode="layer" inkscape:label="Railroad — ties">
+    <path id="tie-edge-0-0" d="M 110.071796770,93.875644347 L 123.928203230,101.875644347" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-0-1" d="M 115.071796770,85.215390309 L 128.928203230,93.215390309" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-0-2" d="M 120.071796770,76.555136271 L 133.928203230,84.555136271" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-0-3" d="M 125.071796770,67.894882233 L 138.928203230,75.894882233" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-0-4" d="M 130.071796770,59.234628196 L 143.928203230,67.234628196" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-0-5" d="M 135.071796770,50.574374158 L 148.928203230,58.574374158" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-0-6" d="M 140.071796770,41.914120120 L 153.928203230,49.914120120" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-0-7" d="M 145.071796770,33.253866082 L 158.928203230,41.253866082" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-2-0" d="M 123.928203230,118.124355653 L 110.071796770,126.124355653" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-2-1" d="M 128.928203230,126.784609691 L 115.071796770,134.784609691" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-2-2" d="M 133.928203230,135.444863729 L 120.071796770,143.444863729" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-2-3" d="M 138.928203230,144.105117767 L 125.071796770,152.105117767" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-2-4" d="M 143.928203230,152.765371804 L 130.071796770,160.765371804" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-2-5" d="M 148.928203230,161.425625842 L 135.071796770,169.425625842" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-2-6" d="M 153.928203230,170.085879880 L 140.071796770,178.085879880" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-2-7" d="M 158.928203230,178.746133918 L 145.071796770,186.746133918" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-4-0" d="M 96.000000000,118.000000000 L 96.000000000,102.000000000" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-4-1" d="M 86.000000000,118.000000000 L 86.000000000,102.000000000" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-4-2" d="M 76.000000000,118.000000000 L 76.000000000,102.000000000" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-4-3" d="M 66.000000000,118.000000000 L 66.000000000,102.000000000" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-4-4" d="M 56.000000000,118.000000000 L 56.000000000,102.000000000" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-4-5" d="M 46.000000000,118.000000000 L 46.000000000,102.000000000" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-4-6" d="M 36.000000000,118.000000000 L 36.000000000,102.000000000" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+    <path id="tie-edge-4-7" d="M 26.000000000,118.000000000 L 26.000000000,102.000000000" fill="none" stroke="#806044" stroke-width="3" stroke-linecap="butt" />
+  </g>
+  <g id="rails" inkscape:groupmode="layer" inkscape:label="Railroad — rails and junction">
+    <path id="rail-edge-0-left" d="M 106.535898385,108.000000000 L 149.837168574,33.000000000" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="butt" />
+    <path id="rail-edge-0-right" d="M 113.464101615,112.000000000 L 156.765371804,37.000000000" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="butt" />
+    <path id="rail-edge-2-left" d="M 113.464101615,108.000000000 L 156.765371804,183.000000000" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="butt" />
+    <path id="rail-edge-2-right" d="M 106.535898385,112.000000000 L 149.837168574,187.000000000" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="butt" />
+    <path id="rail-edge-4-left" d="M 110.000000000,114.000000000 L 23.397459622,114.000000000" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="butt" />
+    <path id="rail-edge-4-right" d="M 110.000000000,106.000000000 L 23.397459622,106.000000000" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="butt" />
+    <circle id="railroad-center" cx="110" cy="110" r="5" fill="#374151" />
+  </g>
+</svg>

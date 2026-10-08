@@ -1,7 +1,8 @@
-# Map testing: river and road hex tiles
+# Map testing: river, road, and railroad hex tiles
 
-This directory contains seven river tiles and eight road tiles (including an
-optional empty tile), plus the separate [map mockup](mockups.svg).
+This directory contains 23 tile SVGs: seven river tiles, eight road tiles, and
+eight railroad tiles. Roads and railroads each include an optional empty tile.
+The separate [map mockup](mockups.svg) is not included in this count.
 This README is the main index for tile additions and changes.
 
 ## Shared tile rules
@@ -12,11 +13,12 @@ at the center (one connection), pass through (two), or join three arms at one
 center junction. All arms belong to one connected system. Only the alternating
 three-arm pattern forms an evenly spaced Y; the others cover the remaining edge
 selections. Four-or-more-edge junctions, loops, and disconnected systems are
-outside these sets. The optional empty road tile has no connections.
+outside these sets. The optional empty road and railroad tiles have no connections.
 
 Each individual tile SVG is standalone and editable in Inkscape; there are no fonts, linked images,
 clones, or external dependencies. Hexagon fills are transparent; outlines remain visible.
 River strokes are blue (`#3d9fc4`); road strokes are brown (`#806044`).
+Railroad rails are charcoal (`#374151`) with brown ties (`#806044`).
 The separate mockup is not part of the standardized tile set.
 
 ## River tile files
@@ -48,16 +50,44 @@ Roads are undirected and have no flow-arrow layers. The empty tile contains only
 the visible hexagon outline and an empty road layer. See [ROADS.md](ROADS.md)
 for additional road-specific notes.
 
+## Railroad tile files
+
+| File | Connected edges | Pattern |
+| --- | --- | --- |
+| [railroad-branch-alternating.svg](railroad-branch-alternating.svg) | 0, 2, 4 | Symmetric Y junction |
+| [railroad-branch-asymmetric.svg](railroad-branch-asymmetric.svg) | 0, 1, 3 | Asymmetric junction |
+| [railroad-branch-consecutive.svg](railroad-branch-consecutive.svg) | 0, 1, 2 | Three consecutive edges |
+| [railroad-empty.svg](railroad-empty.svg) | None | Optional empty hexagon |
+| [railroad-endpoint.svg](railroad-endpoint.svg) | 0 | Edge to center endpoint |
+| [railroad-two-edge-adjacent.svg](railroad-two-edge-adjacent.svg) | 0, 1 | Adjacent edges |
+| [railroad-two-edge-opposite.svg](railroad-two-edge-opposite.svg) | 0, 3 | Straight through |
+| [railroad-two-edge-separated.svg](railroad-two-edge-separated.svg) | 0, 2 | One intervening edge |
+
+Railroads use the same seven connected patterns as roads, plus an empty tile.
+They are undirected and have no flow-arrow layers. Each file has **Hexagon**,
+**Railroad — ties**, and **Railroad — rails and junction** layers. Ties and rails
+are individual editable paths. Hide the Hexagon layer for a railroad-only overlay.
+The empty tile has an outline and two empty railroad layers.
+
+Two 2-unit rail strokes sit 8 units apart, centered on each connection axis.
+Brown ties are 16 units long and 3 units thick, spaced every 10 units from 14
+through 84 units from the center. The rail pair straddles the edge midpoint and
+meets matching rails on adjacent tiles. A charcoal center disk of radius 5
+marks the shared junction or endpoint. This is a schematic map symbol, not a
+physical turnout or track-engineering diagram. Recolor rails and the center
+disk together; recolor the ties separately. Gaps between rails remain transparent.
+
 ## Geometry and editing
 
 All tiles use a 220 x 220 SVG canvas, a point-up regular hexagon of circumradius
 and side length 100, and center `(110, 110)`. The hexagon is approximately
 173.205081 x 200 units. Edge numbers run clockwise from the upper-right edge:
 0 upper right, 1 right, 2 lower right, 3 lower left, 4 left, 5 upper left.
-On nonempty tiles, every river or road arm meets an edge at its midpoint, perpendicular to that edge.
-Both use a width of 12 units. Each branch has exactly one junction at the center.
+On nonempty tiles, every connection axis meets an edge at its midpoint, perpendicular
+to that edge. River and road arms use a width of 12 units; railroad dimensions
+are listed above. Each branch has exactly one junction at the center.
 
-Open an individual SVG in Inkscape. In Layers and Objects, edit the **Hexagon**
+For river and road tiles, open an individual SVG in Inkscape. In Layers and Objects, edit the **Hexagon**
 and **River — editable arms** or **Road — editable arms** layers separately. Each arm is a normal path;
 the center disk keeps the junction or endpoint rounded. Change the arm stroke
 and center disk fill together to recolor the river or road. Hide the Hexagon
@@ -81,12 +111,12 @@ For precise transforms of a complete tile, wrap all layer groups in one group
 and apply `rotate(60 110 110)` (or a multiple of 60). Mirror horizontally with
 `translate(220 0) scale(-1 1)`, or vertically with
 `translate(0 220) scale(1 -1)`. Include hidden flow layers in the transform so
-arrows remain aligned. Transforming only the road group, or river and flow groups, also works when
-the hexagon should stay fixed. Edge labels describe the original orientation.
+arrows remain aligned. To leave the hexagon fixed, transform only the road group, the river and flow
+groups together, or both railroad layers together. Edge labels describe the original orientation.
 
 The 220-unit page includes margins; it is not the map grid spacing. For a
 point-up hex grid, use horizontal center spacing `100*sqrt(3)` and vertical
-row spacing `150`, staggering alternate rows by `50*sqrt(3)`. Matching river or road connections meet at neighboring edge midpoints when their connected edges face each other.
+row spacing `150`, staggering alternate rows by `50*sqrt(3)`. Matching river, road, or railroad connections meet at neighboring edge midpoints when their connected edges face each other.
 
 ## Maintenance
 
