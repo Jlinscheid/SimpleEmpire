@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="220" height="220" viewBox="0 0 220 220">
+  <title>Bridge overlay — straight road</title>
+  <desc>Transparent overlay centered at 110 110, aligned with road edges 0 and 3. Place above a straight road and river. Rotate the bridge layer in 60-degree increments about the center to match the road.</desc>
+  <g id="hex" inkscape:groupmode="layer" inkscape:label="Hexagon — optional alignment guide" style="display:none">
+    <polygon id="hexagon" points="110,10 196.602540378,60 196.602540378,160 110,210 23.397459622,160 23.397459622,60" fill="none" stroke="#586777" stroke-width="1.5"/>
+  </g>
+  <g id="bridge" inkscape:groupmode="layer" inkscape:label="Bridge — editable deck and parapets">
+    <g id="bridge-axis" transform="rotate(30 110 110)">
+      <rect id="bridge-deck" x="102" y="86" width="16" height="48" fill="#806044"/>
+      <g id="parapets" fill="none" stroke="#453a30" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+        <path id="bridge-left-parapet" d="M 99,82 L 102,86 L 102,134 L 99,138"/>
+        <path id="bridge-right-parapet" d="M 121,82 L 118,86 L 118,134 L 121,138"/>
+      </g>
+    </g>
+  </g>
+</svg>

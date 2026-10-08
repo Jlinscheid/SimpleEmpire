@@ -1,7 +1,6 @@
-# Map testing: river, road, and railroad hex tiles
+# Map testing: river, road, railroad, and bridge hex tiles
 
-This directory contains 23 tile SVGs: seven river tiles, eight road tiles, and
-eight railroad tiles. Roads and railroads each include an optional empty tile.
+This directory contains 24 tile SVGs: seven river tiles, eight road tiles, eight railroad tiles, and one bridge overlay. Roads and railroads each include an optional empty tile.
 The separate [map mockup](mockups.svg) is not included in this count.
 This README is the main index for tile additions and changes.
 
@@ -49,6 +48,26 @@ The separate mockup is not part of the standardized tile set.
 Roads are undirected and have no flow-arrow layers. The empty tile contains only
 the visible hexagon outline and an empty road layer. See [ROADS.md](ROADS.md)
 for additional road-specific notes.
+
+## Bridge overlay
+
+[bridge.svg](bridge.svg) is the single rotatable bridge tile. It shares the
+220 x 220 canvas and center `(110, 110)` with the road tiles. Place it at the
+same page origin as `road-two-edge-opposite.svg`, above both the road and river.
+The bridge initially follows the road axis between edges 0 and 3.
+
+The background is transparent and the optional **Hexagon — optional alignment
+guide** layer is hidden by default. The **Bridge — editable deck and parapets**
+layer contains a solid brown deck and two dark, flared side parapets; all shapes
+are independently editable. The 16-unit-wide, 48-unit-long deck covers the
+12-unit road and the river at the crossing; its ends leave the road visible.
+It adds no edge connections and needs no separate mirrored version.
+
+Rotate the entire Bridge layer around `(110, 110)` using
+`rotate(60 110 110)` or `rotate(120 110 110)` to match the other straight-road
+orientations. A 180-degree rotation repeats the same bridge. Keep its internal
+30-degree alignment transform intact. For a crossing, place the river on a
+different axis from the road, with the bridge above both.
 
 ## Railroad tile files
 

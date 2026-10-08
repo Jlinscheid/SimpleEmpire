@@ -37,3 +37,14 @@ to those documented in [README.md](README.md).
 Three-arm tiles have one degree-three junction. Only the alternating pattern is
 an evenly spaced Y; the other two preserve the other distinct edge selections.
 No tile contains disconnected roads, loops, or more than three connections.
+
+## Bridge overlay
+
+Use [bridge.svg](bridge.svg) above the straight-through road tile and river at
+the same page origin. This is one additional overlay, separate from the eight
+road tiles listed above. It has a transparent background, a hidden optional
+hexagon guide, and an editable Bridge layer with a brown deck and dark parapets.
+Its initial orientation matches road edges 0 and 3. Rotate the entire Bridge
+layer by 60 or 120 degrees about `(110, 110)` to match other straight-road
+orientations; 180 degrees repeats the same shape. See the
+[bridge instructions](README.md#bridge-overlay) for dimensions and layer order.
