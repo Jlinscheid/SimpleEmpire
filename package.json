@@ -1,0 +1,18 @@
+{
+  "name": "simple-empire",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "vite experiments/world-map --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build experiments/world-map",
+    "preview": "vite preview experiments/world-map --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": { "pixi.js": "^8.14.0" },
+  "devDependencies": { "typescript": "^5.9.3", "vite": "^7.3.1", "vitest": "^4.0.18" }
+}

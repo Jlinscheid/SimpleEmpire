@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Engraved woodland cluster</title>
+  <g stroke="#3e6150" stroke-width="1.8" stroke-linejoin="round">
+    <path d="M15 47v8M32 43v12M48 48v7"/>
+    <path d="m15 15-10 28h20ZM32 7 19 43h26ZM48 19 38 48h20Z" fill="#66816a"/>
+    <path d="m15 23-5 15M32 15l-7 23M48 26l-5 16" fill="none" stroke="#a4ad82"/>
+  </g>
+</svg>

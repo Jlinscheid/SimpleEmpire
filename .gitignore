@@ -22,3 +22,5 @@ coverage/
 # Local gameplay and scratch files
 saves/
 tmp/
+.vite/
+artifacts/

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Engraved rolling hills</title>
+  <g fill="none" stroke="#8b865f" stroke-width="2" stroke-linecap="round">
+    <path d="M5 42Q19 16 32 42M26 43Q42 9 59 43M12 47h15M37 48h17"/>
+    <path d="m40 32 4 9m0-11 5 10m-29-8 4 7" opacity=".6"/>
+  </g>
+</svg>

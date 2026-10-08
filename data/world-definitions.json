@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "terrains": [
+    { "id": "ocean", "name": "Ocean", "water": true, "travelCost": 100, "settlementSuitability": 0 },
+    { "id": "mountains", "name": "Mountains", "water": false, "travelCost": 9, "settlementSuitability": 0, "rule": { "minElevation": 0.76 } },
+    { "id": "hills", "name": "Hills", "water": false, "travelCost": 3, "settlementSuitability": 0.35, "rule": { "minElevation": 0.63 } },
+    { "id": "forest", "name": "Forest", "water": false, "travelCost": 2, "settlementSuitability": 0.55, "rule": { "minMoisture": 0.55 } },
+    { "id": "plains", "name": "Plains", "water": false, "travelCost": 1, "settlementSuitability": 1, "rule": {} }
+  ],
+  "settlements": [
+    { "id": "city", "name": "City", "minPopulation": 18000, "maxPopulation": 90000 },
+    { "id": "town", "name": "Town", "minPopulation": 1500, "maxPopulation": 12000 }
+  ],
+  "infrastructure": [
+    { "id": "road", "name": "Road", "capacity": 100, "speedKmPerTurn": 30 },
+    { "id": "rail", "name": "Railway", "capacity": 600, "speedKmPerTurn": 100 }
+  ]
+}

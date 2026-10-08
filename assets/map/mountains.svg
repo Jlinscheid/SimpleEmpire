@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Engraved mountain range</title>
+  <path d="m3 49 17-28 11 15L42 9l20 40Z" fill="#c6c1a2" stroke="#77796c" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m42 9 4 37 16 3ZM20 21l3 26 8-11" fill="#969982"/>
+  <path d="m34 28 8-19 9 21-10-8ZM14 31l6-10 7 10-7-4Z" fill="#eee8d4"/>
+</svg>
