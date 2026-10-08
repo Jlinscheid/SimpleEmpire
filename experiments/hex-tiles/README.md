@@ -1,5 +1,13 @@
 # Map testing: river, road, railroad, and bridge hex tiles
 
+Status: exploratory art; not yet adopted as production assets.
+
+Purpose: explore editable, composable connections on a point-up hex grid.
+Open any SVG directly in a browser to view it or in Inkscape to edit its layers.
+No build or package installation is needed to view the files. This study does not
+implement movement, combat, or other game rules. See the [experiment catalog](../README.md)
+for adding separate concept programs. These files were moved from `docs/MapTest`.
+
 This directory contains 24 tile SVGs: seven river tiles, eight road tiles, eight railroad tiles, and one bridge overlay. Roads and railroads each include an optional empty tile.
 The separate [map mockup](mockups.svg) is not included in this count.
 This README is the main index for tile additions and changes.

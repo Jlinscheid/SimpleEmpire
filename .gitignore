@@ -1,0 +1,24 @@
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Dependencies and generated output
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+bin/
+obj/
+build/
+dist/
+coverage/
+*.log
+
+# Local gameplay and scratch files
+saves/
+tmp/
